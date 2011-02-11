@@ -1,0 +1,80 @@
+@import "compass/css3";
+
+html > body #growlit {
+	position: fixed;
+}
+
+#growlit {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	overflow: hidden;
+	
+	.growlit-msg {
+		position: relative;
+		display: block;
+		z-index: 1102;
+		width: 200px;
+		min-height: 30px;
+		padding: 10px;
+		font:{
+			size: 15px;
+			weight: bold;
+		}
+		margin-bottom: 10px;
+		background: #141517;
+		color: #FFF;
+		overflow: hidden;
+	}
+	
+	#growlit-close {
+		position: absolute;
+		z-index: 1103;
+		top: 3px;
+		right: 2px;
+		width: 20px;
+		height: 20px;
+		background: transparent url('../images/growlit_close.png') no-repeat;
+		cursor: pointer;
+		display: inline;
+	}
+	
+	.notice {
+		border: 1px solid #171717;
+		color: #E4E4E4;
+		@include text-shadow(#0A131A, 0, -1px, 1px);
+		
+		background: #141517;
+		@include linear-gradient(color-stops(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.8)));
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), color-stop(0.8, rgba(255, 255, 255, 0))), rgba(0, 0, 0, 0.8);
+
+		@include box-shadow(#8E8E8E, 0, 1px, 1px, inset);
+		@include border-radius(7px);
+	}
+	
+	.error {
+		border: 1px solid #550000;
+		color: #E4E4E4;
+		@include text-shadow(#340000, 0, -1px, 1px);
+		
+		background: #ba0400;
+		@include linear-gradient(color-stops(rgba(186, 4, 0, 0.8), rgba(95, 1, 1, 0.8)));
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 4, 0, 0.8)), color-stop(0.8, rgba(186, 4, 0, 0))), rgba(95, 1, 1, 0.8);
+
+		@include box-shadow(#d5a4a4, 0, 1px, 1px, inset);
+		@include border-radius(7px);
+	}
+	
+	.success {
+		border: 1px solid #002f00;
+		color: #E4E4E4;
+		@include text-shadow(#002a00, 0, -1px, 1px);
+		
+		background: #009000;
+		@include linear-gradient(color-stops(rgba(0, 144, 0, 0.8), rgba(0, 73, 0, 0.8)));
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 144, 0, 0.8)), color-stop(0.8, rgba(0, 144, 0, 0))), rgba(0, 73, 0, 0.8);
+
+		@include box-shadow(#9fd99f, 0, 1px, 1px, inset);
+		@include border-radius(7px);
+	}
+}

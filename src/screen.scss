@@ -1,0 +1,28 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+body{
+	background: #e6e6e6;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.5em;
+
+	#container{
+		background: #000;
+		width: 200px;
+		text-align: center;
+		padding: 20px 40px;
+		margin: 0 auto;
+		@include border-bottom-radius(10px);
+		@include linear-gradient(color-stops(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)));
+		
+		a{
+			color: #FFF;
+			text-decoration: none;
+		}
+	}
+}

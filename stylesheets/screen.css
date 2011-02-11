@@ -1,0 +1,87 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: "" "";
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+a img {
+  border: none;
+}
+
+body {
+  background: #e6e6e6;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+}
+body #container {
+  background: #000;
+  width: 200px;
+  text-align: center;
+  padding: 20px 40px;
+  margin: 0 auto;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -o-border-bottom-left-radius: 10px;
+  -ms-border-bottom-left-radius: 10px;
+  -khtml-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -o-border-bottom-right-radius: 10px;
+  -ms-border-bottom-right-radius: 10px;
+  -khtml-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+body #container a {
+  color: #FFF;
+  text-decoration: none;
+}
